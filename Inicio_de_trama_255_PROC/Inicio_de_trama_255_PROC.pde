@@ -21,10 +21,11 @@ void draw() {
   
   
   myPort.write(inicio_de_trama);
+  println(inicio_de_trama);
   for(int i=0; i<64; i++){
     a=int(random(0,2));
     myPort.write(a);
-    println(a);
+    print(a);
     delay(5);
     a++;
   }
